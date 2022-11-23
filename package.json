@@ -1,0 +1,30 @@
+{
+  "name": "cypress-ci",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "tsc && vite build",
+    "preview": "vite preview",
+    "start": "serve --listen 8080",
+    "cy:open": "cypress open",
+    "cy:run": "cypress run",
+    "cy:local:run": "start-test 8080 cy:run",
+    "cy:local:open": "start-test 8080 cy:open"
+  },
+  "dependencies": {
+    "react": "^18.2.0",
+    "react-dom": "^18.2.0"
+  },
+  "devDependencies": {
+    "@types/react": "^18.0.24",
+    "@types/react-dom": "^18.0.8",
+    "@vitejs/plugin-react": "^2.2.0",
+    "cypress": "^11.2.0",
+    "serve": "^14.1.2",
+    "start-server-and-test": "^1.14.0",
+    "typescript": "^4.6.4",
+    "vite": "^3.2.3"
+  }
+}
